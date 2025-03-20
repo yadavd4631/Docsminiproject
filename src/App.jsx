@@ -1,4 +1,4 @@
-import Background from "./components/background"
+import Background from "./components/Background"
 import Foreground from "./components/Foreground"
 
 
