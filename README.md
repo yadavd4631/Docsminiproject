@@ -1,12 +1,39 @@
-# React + Vite
+Project: Draggable File Cards UI
+Overview:
+This project is a modern UI component that displays file cards with draggable functionality. Each card represents a file with details like description, file size, close/download actions, and tags. The project utilizes React.js with Tailwind CSS for styling and Framer Motion for drag-and-drop functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
+✅ Draggable Cards – Users can move file cards around the screen.
+✅ File Details – Each card displays a file's description and size.
+✅ Dynamic Icons – Close button (IoCloseCircle) or Download button (MdOutlineFileDownload) appears based on file status.
+✅ Tag Labels – Tags (e.g., "Download Now", "Upload") are dynamically colored (blue or green).
+✅ Reusable Components – The Card component is modular, making it easy to use with different data.
 
-Currently, two official plugins are available:
+Tech Stack:
+React.js – Core framework for building UI components.
+Tailwind CSS – Provides a sleek and responsive design.
+Framer Motion – Enables smooth drag-and-drop interaction.
+React Icons – Adds visually appealing icons.
+How It Works:
+Foreground Component
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Holds the list of file data.
+Uses useRef to allow dragging constraints for the cards.
+Maps through data and passes it to the Card component.
+Card Component
 
-## Expanding the ESLint configuration
+Displays file details like description, size, and action buttons.
+Uses Framer Motion to make each card draggable.
+Applies dynamic background color for tags.
+Use Cases:
+✔ File Management UI – Drag-and-drop functionality for organizing files.
+✔ Dashboard Widgets – Display quick file details in an interactive way.
+✔ Task Cards – Adaptable for Kanban boards, project management tools, etc.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
+
+
+
